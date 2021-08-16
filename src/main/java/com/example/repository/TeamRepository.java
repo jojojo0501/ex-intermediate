@@ -29,7 +29,7 @@ public class TeamRepository {
 	public List<Team> findAll() {
 		StringBuilder sql = new StringBuilder();
 		sql.append(
-				"SELECT id,leagueName,teamName,headquaters,inauguration,history");
+				"SELECT id,league_name,team_name,headquarters,inauguration,history");
 		sql.append(" FROM teams ORDER BY inauguration ASC;");
 		List<Team> teamList = template.query(sql.toString(),TEAM_ROW_MAPPER);
 		return teamList;
