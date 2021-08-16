@@ -1,7 +1,7 @@
 package com.example.domain;
 
 /**
- * チーム情報を表すドメイン
+ * チーム情報を表すドメイン.
  * @author kanekojota
  *
  */
